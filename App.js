@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text, StyleSheet } from 'react-native';
 
-// Exemplo de Componente Reutilizável 
+//Base inicial apenas, sem nada demais
+//Nem funciona inclusive mas interessante a forma de usar o expo pra abrir o app no celular
 const ZeusCard = ({ title, description }) => (
   <View style={styles.card}>
     <Text style={styles.cardTitle}>{title}</Text>
@@ -11,7 +12,6 @@ const ZeusCard = ({ title, description }) => (
   </View>
 );
 
-// Telas Iniciais (Exemplo: Membros e Projetos) [cite: 17, 20]
 const MembersScreen = () => (
   <View style={styles.container}>
     <Text style={styles.title}>Gestão de Membros</Text>
